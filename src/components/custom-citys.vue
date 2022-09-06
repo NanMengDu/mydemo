@@ -111,5 +111,8 @@ export default {
     },
 
   },
+  mounted(){
+    this.$bus.$emit('send',111)
+  }
 }
 </script>

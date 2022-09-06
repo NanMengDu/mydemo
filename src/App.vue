@@ -14,6 +14,11 @@ export default {
   data() {
     return {
     }
+  },
+  created(){
+    this.$bus.$on('send',data=>{
+      console.log(data);
+    })
   }
 }
 </script>
