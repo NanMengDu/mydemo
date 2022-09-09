@@ -8,7 +8,7 @@
 
 <script>
     export default {
-        name:'hua_kuai',
+        // name:'hua-kuai',
         data(){
             return {
                 beginClientX:0,           /*距离屏幕左端距离*/
