@@ -6,6 +6,7 @@
     <test-times></test-times>
     <!-- 面包屑 -->
     <Bread></Bread>
+    {{flag}}
   </div>
 </template>
 
@@ -24,11 +25,15 @@ export default {
 },
   data() {
     return {
+      flag:false
     }
   },
-  created(){
+  mounted(){
     this.$bus.$on('send',data=>{
       console.log(data);
+    })
+    this.$bus.$on('see',data=>{
+      this.flag = data
     })
   }
 }

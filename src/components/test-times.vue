@@ -1,6 +1,6 @@
 <template>
-    <div>
-        {{dataTime}}
+    <div class="timeP">
+        当前时间:{{dataTime}}
     </div>
 </template>
 
@@ -25,3 +25,8 @@ export default {
     }
 }
 </script>
+<style>
+    .timeP{
+        height: 20px;
+    }
+</style>

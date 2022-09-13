@@ -1,7 +1,8 @@
 <template>
     <div>
         <div :to="{ path: '/' }" @click="foo('首页')">首页</div>
-        <div>{{nameData}}</div>
+        <!-- <div>{{nameData}}</div> -->
+{{num}}
     </div>
 </template>
 
@@ -17,6 +18,12 @@ export default {
         foo(i) {
             console.log(i);
             this.nameData = i
+            this.$bus.$emit('see',true)
+        }
+    },
+    computed:{
+        num(){
+            return this.$store.state.number
         }
     }
 }
