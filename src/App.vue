@@ -10,7 +10,10 @@
 
     <!-- 滑动 -->
     <Transition></Transition>
-    <Mycanvas></Mycanvas>
+    <!-- 动态背景图 -->
+    <!-- <Mycanvas></Mycanvas> -->
+    <!-- 地球 -->
+    <Earth></Earth>
   </div>
 </template>
 
@@ -20,7 +23,8 @@ import testTimes from './components/test-times.vue';
 import HuaKuai from './components/hua-kuai.vue';
 import Bread from './components/bread.vue';
 import Transition from './components/transition.vue';
-import Mycanvas from './components/mycanvas.vue';
+// import Mycanvas from './components/mycanvas.vue';
+import Earth from './components/earth.vue';
 export default {
   components: {
     CustomCitys,
@@ -28,7 +32,8 @@ export default {
     HuaKuai,
     Bread,
     Transition,
-    Mycanvas
+    // Mycanvas,
+    Earth
 },
   data() {
     return {
