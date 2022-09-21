@@ -9,8 +9,6 @@ import 'element-ui/lib/theme-chalk/index.css';
 import * as echarts from 'echarts'
 //vue全局注入echarts
 Vue.prototype.$echarts = echarts;
-import axios from 'axios'
-Vue.prototype.$axios = axios
 
 import VueParticles from 'vue-particles'
 Vue.use(VueParticles)
